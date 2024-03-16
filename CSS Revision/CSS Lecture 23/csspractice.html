@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations and Keyframes</title>
+    <style>
+        .container {
+            background-color: lightgreen;
+        }
+
+        .box {
+            background-color: green;
+            width: 250px;
+            height: 150px;
+            position: relative;
+            animation-name: Shoaib1;
+            animation-duration: 2s;
+            animation-iteration-count: 2;
+            animation-fill-mode: alternate;
+            animation-timing-function: ease-in;
+        }
+        @keyframes Shoaib1{
+            from{
+                width: 200px;
+            }
+            to{
+                width: 500px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+</body>
+
+</html>

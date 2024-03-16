@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umair's cuisine</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<style>
+    /* CSS Reset */
+    body{
+        color: white;
+        margin: 0x;
+        padding: 0px;
+        background: url(img1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .left{
+        display: inline-block;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+    .mid{
+        display: block;
+        margin: 20px auto;
+        width: 40%;
+    }
+    .right{
+        display: inline-block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+    .navbar li{
+        display: inline-block;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 10px 10px;
+    }
+    .navbar li a:hover{
+        color: lightblue;
+        text-decoration: underline;
+        background-color: darkblue;
+        border-radius: 5px;
+    }
+    .left img{
+        width: 150px;
+        height: 35px;
+    }
+    .searchbox{
+        border-radius: 5px;
+    }
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="logo.jpeg" alt="Pizza hug">
+            
+        </div>
+        <!-- mid bog for navbar -->
+        <div class="mid">
+        <ul class="navbar">
+            <li> <a href ="x">Home</a></li>
+            <li> <a href ="x">Menu</a></li>
+            <li> <a href ="x">About Us</a></li>
+            <li> <a href ="x">Timings</a></li>
+            <li> <a href ="x">Contact Us</a></li>
+        </ul>
+        </div>
+        <!-- right box for search recipies -->
+        <div class="right">
+            <input type="text" class="searchbox" id="search" placeholder="Search recipies">
+        </div>
+    </header>
+    
+</body>
+</html>

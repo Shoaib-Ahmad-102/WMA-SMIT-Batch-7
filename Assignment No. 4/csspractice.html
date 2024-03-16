@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tropiko</title>
+    <style>
+        header {
+            display: inline;
+        }
+
+        .navbar {
+            background-color: #f2f2f2;
+            /* height: 520px; */
+            min-height: 520px;
+        }
+        .imgText{
+            display: inline-block;
+            margin: 33px 0px 0px -40px;
+        }
+
+        .navbar ul {
+            margin: -30px;
+            padding: 0px 40px;
+            list-style-type: none;
+            overflow: auto;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .navbar ul li {
+            float: right;
+            list-style: none;
+            padding: 0;
+            margin: 10px 25px;
+            display: inline;
+        }
+
+        .navbar button {
+            float: right;
+            background-color: rgb(249, 125, 80);
+            margin: 25px 45px;
+            padding: 8px 20px;
+            border: none;
+            color: white;
+        }
+
+        header nav img.search {
+            float: right;
+            margin: 30px 0px;
+            height: 22px;
+        }
+
+        header nav img.logo {
+            float: left;
+            margin: 20px 45px;
+            height: 40px;
+        }
+
+        h1 {
+            width: 338px;
+            font-size: 3rem;
+            margin: 135px 0px 32px 40px;
+        }
+
+        .para {
+            float: left;
+            width: 550px;
+            margin: 12px 0px 0px 40px;
+        }
+
+        button.contact {
+            float: left;
+            background-color: black;
+            margin: 90px 0px 0px 10px;
+            padding: 12px 25px 12px 25px;
+        }
+
+        button.shop {
+            float: left;
+            margin: 90px 0px;
+            padding: 12px 25px 12px 25px;
+        }
+
+        header nav img.slide {
+            float: right;
+            height: 320px;
+            width: 430px;
+            margin: -135px 85px;
+        }
+
+        .heading2{
+            text-align: center;
+            font-size: 2rem;
+            display: inline-block;
+        }
+        .secondPara{
+            text-align: center;
+        }
+
+        .container1 {
+            text-align: center;
+            width: 95%;
+            margin: 40px;
+        }
+
+        .fruits {
+            border: 1px solid #8d8989;
+            margin: 12px 3px;
+            padding: 12px 3px;
+        }
+
+        #orange {
+            float: left;
+            width: 32%;
+        }
+
+        #grapes {
+            float: left;
+            width: 32%;
+        }
+
+        #guava {
+            float: left;
+            width: 32%;
+        }
+
+        .fruit {
+            height: 50px;
+        }
+
+        .title {
+            color: rgb(249, 125, 80);
+        }
+
+        .btn1 {
+            border: none;
+            background-color: black;
+            color: White;
+            display: block;
+            margin: 0 auto;
+            padding: 12px 22px 12px 22px;
+        }
+
+        .container2 {
+            text-align: center;
+            margin: 50px;
+        }
+
+        .container2 h2 {
+            font-size: 2rem;
+        }
+
+        .container3 {
+            width: 95%;
+            margin: 40px;
+        }
+        
+        #item4 {
+            float: left;
+            width: 70%;
+        }
+        #item5{
+            border: none;
+            background-color: black;
+            color: white;
+            padding: 12px 28px 12px 28px;
+        }
+        
+        #item6 {
+            float: center;
+            width: 17%;
+            margin: 50px 0px;
+            padding: 0px 70px;
+        }
+        .container4 {
+            width: 95%;
+            margin: 40px;
+        }
+
+        #item7 {
+            float: left;
+            width: 70%;
+        }
+        #item8{
+            border: none;
+            background-color: black;
+            color: white;
+            padding: 12px 28px 12px 28px;
+        }
+
+        #item9 {
+            float: center;
+            width: 7%;
+            margin: 30px 0px;
+            padding: 0px 130px;
+        }
+        .container5 {
+            width: 95%;
+            margin: 40px;
+        }
+
+        #item10 {
+            float: left;
+            width: 70%;
+        }
+        #item11{
+            border: none;
+            background-color: black;
+            color: white;
+            padding: 12px 28px 12px 28px;
+        }
+
+        #item12 {
+            float: center;
+            width: 17%;
+            margin: 30px 0px;
+            padding: 0px 70px;
+        }
+        .container6{
+            text-align: center;
+            width: 100%;
+        }
+        .test{
+            text-align: center;
+            font-size: 35px;
+        }
+        .para1{
+            text-align: center;
+        }
+        .img1{
+            width: 300px;
+            height: 300px;
+        }
+        .sec{
+            text-align: center;
+            font-size: 30px;
+        }
+        .para2{
+            text-align: center;
+            padding: 0px 40px 0px 30px;
+        }
+        .container7{
+            float: left;
+            width: 100%;
+        }
+        .heading{
+            margin: 130px 0px 0px 0px;
+            padding: 0px 0px 0px 38px;
+            font-size: 2rem;
+        }
+        form {
+            float: left;
+            display: block;
+            margin: 0px 0px 0px 40px;
+            padding: 30px 0px 0px 0px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            padding: 20px 0px 0px 0px;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            border-radius: none;
+            font-size: 16px;
+            width: 75%;
+        }
+        .btn2{
+            margin: 50px 0px 50px 0px;
+            padding: 10px 30px 10px 30px;
+            background-color: rgb(249, 125, 80);
+            color: white;
+            border: none;
+        }
+
+        #unique{
+            float: right;
+            height: 400px;
+            margin: 0px 40px;
+        }
+        .container8{
+            width: 100%;
+        }
+        #content1{
+            width: 100px;
+            height: 100px;
+            margin: 0px 40px;
+            float: left;
+        }
+        #content2{
+            width: 114px;
+            height: 100px;
+            padding: 0px 150px;
+            float: left;
+        }
+        #content3{
+            width: 100px;
+            height: 100px;
+            padding: 0px 60px;
+            float: left;
+        }
+        #content4{
+            width: 25%;
+            height: 23px;
+            margin: 0px 30px;
+            float: right;
+        }
+        #content6{
+            background-color: rgb(249, 125, 80);
+            color: white;
+            border: none;
+            margin: 25px 0px 0px 0px;
+            padding: 5px 22px 5px 22px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img class="logo" src="logo.png" alt="Tropiko">
+            <div class="imgText">TROPIKO</div>
+            <button class="btn">Get A Quote</button>
+            <img class="search" src="search-icon.png" alt="Search">
+            <ul>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Fruits</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+            <b></b>
+            <h1>Welcome to <br> Our Fruits Shop</h1></b>
+            <p class="para">Welcome to Tropiko, where the juiciest adventures await! Dive into a world bursting with the
+                freshest fruits straight from the tropics. From succulent mangoes to zesty pineapples, our fruit
+                paradise is here to tantalize your taste buds and brighten your day. <br>
+                <button class="shop">SHOP NOW</button>
+                <button class="contact"> CONTACT US</button>
+            </p>
+            <img class="slide" src="slide-img.png" alt="">
+        </nav>
+    </header>
+        <h2 class="heading2">Our Services</h2>
+        <p class="secondPara">Welcome to Tropiko, where juicy delights await! From fresh fruits to tropical treats, we bring nature's
+            sweetness right to your doorstep.
+        </p>
+    <div class="container1">
+        <div class="fruits" id="orange">
+            <img class="fruit" src="card-item-1.png" alt="">
+            <h3 class="title">Orange</h3>
+            <p>Fresh Oranges: Our juicy citrus fruits are like little suns! With their bright orange skin and sweet,
+                tangy flavor, they’re a burst of sunshine in every bite. Whether you peel them or squeeze them into
+                refreshing orange juice, you’ll taste the goodness. So come grab some zesty, vitamin-packed oranges from
+                our website—they’re nature’s sweet gift! </p>
+        </div>
+        <div class="fruits" id="grapes">
+            <img class="fruit" src="card-item-2.png" alt="">
+            <h3 class="title">Grapes</h3>
+            <p>Fresh Grapes: Imagine tiny, round fruits that come in different colors—red, purple, white, and green.
+                These little wonders grow on woody grape vines. You can eat them right off the vine, just like that! Or,
+                if you prefer, they can be turned into yummy raisins or sweet grape juice. Grapes are like nature’s
+                candy—juicy.</p>
+        </div>
+        <div class="fruits" id="guava">
+            <img class="fruit" src="card-item-3.png" alt="">
+            <h3 class="title">Guava</h3>
+            <p>Fresh Guavas: Imagine little trees with bright green leaves that grow in warm, tropical places. These
+                magical trees give us guavas, which are like nature’s sweet surprises! Guavas come in different
+                colors—yellow, pink, and green. When you bite into a guava, you taste a mix of sweetness and tanginess.
+            </p>
+        </div>
+        <button class="btn1">Read More</button>
+    </div>
+    <div class="container2">
+        <h2>Fresh fruits</h2>
+        <p>Hey there! Dive into our fruity wonderland where we've got the freshest fruits waiting just for you! Grab a taste of nature's goodness today!</p>
+    </div>
+    <div class="container3">
+        <div class="item1" id="item4">
+            <h2>Best Fresh Orange</h2>
+            <p>Welcome to our fruit paradise! Get ready to taste the juiciest oranges ever! Our Best Fresh Oranges are bursting with sweet citrus flavor and are packed with healthy Vitamin C to keep you strong and happy. Whether you're snacking, juicing, or cooking, these oranges are perfect for any occasion.</p><br>
+                <button id="item5">Buy Now</button>
+        </div>
+        <div><img class="item1" id="item6" src="orange.png" alt=""></div>
+    </div>
+    <div class="container4">
+        <div class="item2" id="item7">
+            <h2>Best Fresh Grapes</h2>
+            <p>Hey there, fruit lovers! Ready for a grape escape? Introducing our Best Fresh Grapes - plump, juicy, and bursting with flavor! These little bites of sweetness are perfect for snacking, adding to salads, or making delicious grape juice. Packed with vitamins and antioxidants, our grapes are a healthy and tasty treat for any time of day.</p><br>
+                <button id="item8">Buy Now</button>
+            </div>
+            <div><img class="item2" id="item9" src="grapes.png" alt=""></div>
+    </div>
+    <div class="container5">    
+        <div class="item3" id="item10">
+            <h2>Best Fresh Guavas</h2>
+            <p>Hey fruity friends! Get ready to taste the tropical delight with our Best Fresh Guavas! These juicy gems are bursting with sweet and tangy flavor that will transport you to a sunny paradise. Packed with vitamins and fiber, guavas make a healthy and delicious snack for any time of day. Don't miss out on the freshness - grab yours today and experience a taste of the tropics!</p><br>
+                <button id="item11">Buy Now</button>
+        </div>
+        <div><img class="item3" id="item12" src="gauva.png" alt=""></div>
+    </div>
+    <div class="container6">
+        <H2 class="test">Testimonial</H2>
+        <p class="para1">Tropiko's fruits are like a burst of sunshine in every bite! Their freshness never fails to brighten my day.</p>
+        <img class="img1" src="client.png" alt="">
+        <section class="sec">Johnhex</section>
+        <p class="para2">Tropiko's fruit website is awesome! Their fruits are so tasty and fresh, it's like eating sunshine. I love how easy it is to find yummy snacks on their site. Thanks to Tropiko, I'm eating healthier and feeling great. Their fruits are a hit with my family too! I can't recommend Tropiko enough for anyone who loves delicious fruits. Keep up the fantastic work, Tropiko!</p>
+    </div>    
+    <div class="container7">
+            <h2 class="heading">Contact Us</h2>
+            <form action="/submit_form" method="post">
+                <label for="name"></label>
+            <input type="text" id="name" name="name" placeholder="Name">
+    
+            <label for="phone"></label>
+            <input type="text" id="phone" name="phone" placeholder="Phone Number" required>
+    
+            <label for="email"></label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+    
+            <label for="message"></label>
+            <textarea id="message" name="message" placeholder="Message" required></textarea><br>
+            <button class="btn2">Send</button>
+            </form>
+            
+            <div><img class="img2" id="unique" src="orange-dish.png" alt=""></div>
+    </div>
+    <div class="container8">
+        <div class="list" id="content1">
+            <h3>Fruits</h3>
+            <p>Explore our fruity world! Discover fresh apples, juicy oranges, sweet strawberries, and more delicious fruits waiting for you!</p>
+            </div>
+            <div class="list" id="content2">
+                <h3>Services</h3>
+                <p>Check out our awesome services! We offer top-notch delivery, helpful customer support, and delicious fruit selections just for you!</p>
+            </div>   
+            <div class="list" id="content3">
+                <h3>List</h3>
+                <p>Apples <br>
+                   Oranges <br>
+                   Bananas <br>
+                   Strawberries <br>
+                   Grapes <br>
+                   Pineapples <br>
+                   Watermelons <br>
+                   Kiwis<br></p>
+            </div>  
+            <div class="list" id="content4">
+                <h3>Follow Us</h3>
+                <img class="list" id="logo1" src="fb.png" alt="">
+                <img class="list" id="logo2" src="twitter.png" alt="">
+                <img class="list" id="logo3" src="linkedin.png" alt="">
+                <img class="list" id="logo4" src="instagram.png" alt="">
+                    <h3 id="heading3">Subscribe Now</h3>
+                    <input type="search" id="search"><br>
+                <button id="content6">Subscribe</button>
+            </div>
+        </div>
+        <footer>All right reserve</footer>
+    </body>
+</html>

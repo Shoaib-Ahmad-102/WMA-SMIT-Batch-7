@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+<style>
+    body {
+  font-family: sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.centered-content {
+  width: 600px; /* Adjust as needed */
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  position: relative;
+}
+
+/* Separate labels from fields */
+label {
+  display: block;
+  margin-bottom: 10px; /* Increased spacing for separation */
+  text-align: left;
+  width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px; /* Increased spacing for separation */
+  font-size: 16px;
+  position: relative;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+    <div class="centered-content">
+    <form action="/action_page.php"></form>
+    
+    <label for="fname">First Name:</label>
+    <input type="text" id="fname" value="Enter your first name"><br>
+    
+    <label for="lname">Last Name:</label>
+    <input type="text" id="lname" value="Enter your last name"><br>
+    
+    <label for="Email">Email:</label>
+    <input type="text" id="Email" value="It should contain @"><br>
+    
+    <label for="Mobile">Mobile:</label>
+    <input type="tel" name="Mobile" id="Mobile" value="Only 10 digits are allowed"><br>
+    
+    <label for="Gender">Gender:</label>
+    
+    <input type="radio" id="Male" name="Gender" value="Male">
+    <label for="Male">Male</label>
+    <input type="radio" id="Female" name="Gender" value="Female">
+    <label for="Female">Female</label><br>
+
+    <label for="date-of-birth">Date of Birth:</label>
+    <input type="text" id="date-of-birth" placeholder="mm/dd/yyyy" pattern="\d{2}/\d{2}/\d{4}"><br>
+
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" rows="5"></textarea><br>
+
+    <label for="City">City:</label>
+    <input type="text" id="City" name="City"><br>
+
+    <label for="areapin">Area Pin:</label>
+    <input type="text" id="areapin" name="areapin"><br>
+
+    <label for="state">State:</label>
+    <input type="text" id="state" name="state"><br>
+
+    <label for="qualification">Qualification:</label>
+    <select name="qualification" id="qualification">
+    <option value="">Select Qualification</option>    
+    <option value="">Master</option>
+    <option value="">Bachlor</option>
+    <option value="">Intermediate</option>
+    </select><br>
+
+    <label for="specialization">Specialization:</label>    
+    <input type="checkbox" name="specialization" id="specialization">
+    <label for="specialization">Computer Science</label><br>
+    <input type="checkbox" name="specialization" id="specialization">
+    <label for="specialization">Information Technology</label><br>
+    <input type="checkbox" name="specialization" id="specialization">
+    <label for="specialization">Computer Architecture</label><br>
+    <input type="checkbox" name="specialization" id="specialization">
+    <label for="specialization">Tele Communications</label><br>
+
+    <label for="password">Password:</label>
+    <input type="text" id="password" name="password"><br>
+
+    <Button type="submit">Registered</Button>
+    </div>
+</body>
+</html>

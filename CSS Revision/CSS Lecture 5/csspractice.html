@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling links and buttons</title>
+    <style>
+        .container{
+            border: 3px solid darkorchid;
+            padding: 25px 25px;
+            margin: auto;
+            background: lightcyan;
+            width: 50%;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color: darkgreen;
+            background-color: antiquewhite;
+        }
+        a:visited{
+            color: lightblue;
+            background-color: darkblue;
+        }
+        .btn{background-color: white;
+        color: blueviolet;
+        border: none;
+        cursor: pointer;
+        padding: 6px;
+        border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="login">
+        <h1>This is login detail</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, sint? Dolorem odit, qui facilis odio eius nam tenetur nemo tempora. Voluptatibus et sunt explicabo incidunt veniam impedit tempora id veritatis?
+        </p><br>
+        <a href="https://www.google.com" class="btn">Login Now</a>
+        <button class="btn">Login Now</button>
+    </div>
+</body>
+</html>

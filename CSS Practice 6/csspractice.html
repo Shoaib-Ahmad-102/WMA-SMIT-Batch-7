@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Nevigation Menue</title>
+    <style>
+        .navbar{
+            background: brown;
+            border-radius: 10px;
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            float: left;
+            list-style: none;
+            margin: 10px 15px;
+            padding: 3px 3px;
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            color: White;
+        }
+        .Search{
+            float: right;
+            color: white;
+            padding: 6px 6px;
+            padding-right: 15px;
+            border-radius: 8px;
+        }
+        .navbar input{
+            border-radius: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="*">Home</a></li>
+                    <li><a href="*">Contanct</a></li>
+                    <li><a href="*">About</a></li>
+                    <li><a href="*">Services</a></li>
+                    <div class="Search">
+                    <input type="text" class="Search" id="Search" placeholder="Search this site">
+                    </div>
+                </ul>
+            </nav>
+        </header>
+    </div>
+</body>
+</html>
